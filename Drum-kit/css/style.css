@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.keys .key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 3px solid #90d6ff;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    user-select: none;
+    transition: all 0.2s;
+    box-shadow: 0 0px 25px -12px #000;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.keys .key kbd {
+    font-size: 20px;
+    margin-bottom: 9px;
+    color: #474366;
+    font-weight: 700;
+}
+
+.keys .key.play {
+    transform: scale(1.2);
+    border-color: #fcb6d3;
+}
