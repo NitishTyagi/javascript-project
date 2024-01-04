@@ -1,2 +1,2 @@
 # javascript-project.github.io
-javascript-project
+javascript-project 
