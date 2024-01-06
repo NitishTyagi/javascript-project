@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Variable JS - Nitish Tyagi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.gif">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Test <span>Design</span></h1>
+            <label for="spacing">Spacing</label>
+            <input type="range" name="spacing" id="spacing" min="10" max="100" value="10" data-sizing="px">
+    
+            <label for="blur">Blur</label>
+            <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+    
+            <label for="base">Base color</label>
+            <input type="color" name="base" id="base" value="#ffffff">
+        </div>
+    
+        <div class="imgWrapper">
+            <img src="https://picsum.photos/id/237/500/300" alt="https://picsum.photos/id/237/500/300">
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const inputs = document.querySelectorAll("input");
+
+    function OnChange() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+    }
+
+    inputs.forEach(element => element.addEventListener("change", OnChange));
+    inputs.forEach(element => element.addEventListener("mouseover", OnChange));
+</script>
+</html>
