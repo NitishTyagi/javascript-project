@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: sans-serif;
+    background: #2e93ff;
+    background: -webkit-linear-gradient(to right, #2e93ff, #2e73cd);
+    background: linear-gradient(to right, #2e93ff, #2e73cd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+:root {
+    --base: #fff;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+.imgWrapper {
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--base);
+    margin-top: 40px;
+}
+
+h1 span {
+    color: var(--base);
+}
