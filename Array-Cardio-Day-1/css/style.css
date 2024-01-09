@@ -27,13 +27,10 @@ body {
     --blur: 10px;
 }
 
-.imgWrapper {
-    padding: var(--spacing);
-    filter: blur(var(--blur));
-    background-color: var(--base);
-    margin-top: 40px;
+.text {
+    color: #fff;
 }
 
-h1 span {
-    color: var(--base);
+.mw-category {
+    display: none;
 }
